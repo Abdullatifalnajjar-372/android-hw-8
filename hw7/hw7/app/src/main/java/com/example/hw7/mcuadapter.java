@@ -50,17 +50,27 @@ public class mcuadapter extends RecyclerView.Adapter {
             }
         });
 
+        ((ViewHolder)holder).del.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mArray.remove(position);
+                notifyDataSetChanged();
+            }
+        });
+
 
     }
 
     @Override
     public int getItemCount() {
+
         return mArray.size();
     }
 
 
     public static class ViewHolder extends RecyclerView.ViewHolder{
         public ImageView img;
+        public ImageView del;
         public TextView mname;
         public TextView power;
         public View view;
@@ -71,6 +81,7 @@ public class mcuadapter extends RecyclerView.Adapter {
             mname = itemView.findViewById(R.id.name);
             power = itemView.findViewById(R.id.power);
             img = itemView.findViewById(R.id.profile_image);
+            del = itemView.findViewById(R.id.del);
 
         }
     }

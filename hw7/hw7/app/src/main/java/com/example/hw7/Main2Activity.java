@@ -19,11 +19,11 @@ public class Main2Activity extends AppCompatActivity {
         TextView name = findViewById(R.id.speed);
         TextView speed = findViewById(R.id.speed2);
         TextView strenth = findViewById(R.id.strength);
-        ImageView img = findViewById(R.id.imageView2);
+        ImageView img = findViewById(R.id.imageView3);
 
         name.setText(m.getName());
-        speed.setText(m.getSpeed());
-        strenth.setText(m.getStrength());
+        speed.setText(m.getSpeed()+"");
+        strenth.setText(m.getStrength()+"");
         img.setImageResource(m.getImage());
     }
 }
