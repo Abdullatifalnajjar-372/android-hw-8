@@ -40,7 +40,6 @@ public class mcuadapter extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
         ((ViewHolder) holder).img.setImageResource(mArray.get(position).getImage());
         ((ViewHolder) holder).mname.setText(mArray.get(position).getName());
-        ((ViewHolder) holder).power.setText(mArray.get(position).getPower());
         ((ViewHolder)holder).view.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,14 +71,14 @@ public class mcuadapter extends RecyclerView.Adapter {
         public ImageView img;
         public ImageView del;
         public TextView mname;
-        public TextView power;
+        public TextView mpower;
         public View view;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             view = itemView;
             mname = itemView.findViewById(R.id.name);
-            power = itemView.findViewById(R.id.power);
+            mpower= itemView.findViewById(R.id.power);
             img = itemView.findViewById(R.id.profile_image);
             del = itemView.findViewById(R.id.del);
 
