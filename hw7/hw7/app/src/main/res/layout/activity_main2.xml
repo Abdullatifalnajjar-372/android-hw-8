@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main2Activity"
+    android:background="@drawable/marvel">
+
+    <TextView
+        android:id="@+id/speed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/speed2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speed"
+        android:layout_alignBottom="@+id/profile_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="529dp"
+        android:layout_marginEnd="240dp"
+        android:layout_marginBottom="-133dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/strength"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/speed"
+        android:layout_alignBottom="@+id/profile_image"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="528dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="-132dp"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/captain" />
+</RelativeLayout>
